@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +18,21 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <div class="Titel">
+        List todo
+        <ul className="todolist">
+          <li clasName="items">
+            Go to School
+          </li>
+          <li clasName="items">
+            Go to Home
+          </li>
+          <li clasName="items">
+            Go to Bed
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
