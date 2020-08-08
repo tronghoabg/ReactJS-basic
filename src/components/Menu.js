@@ -2,30 +2,20 @@ import React, {Component} from 'react';
 
 class Menu extends Component {
     render() {
+
+        let items = this.props.items;
+
         return (
-            <div className="menu">
+          <div className="menu">{
+              items.map(item => (
                 <a className="home active" href="/">
-                    <i class="fas fa-home"></i>
-                    <p>Home</p>
-                </a>
-                <a className="home" href="/">
-                    <i class="fas fa-gift"></i>
-                    <p>Deal</p>
-                </a>
-                <a className="home" href="/">
-                    <i class="fas fa-cloud-upload-alt"></i>
-                    <p>Upload</p>
-                </a>
-                <a className="home" href="/">
-                        <i class="fas fa-briefcase"></i>
-                    <p>Work</p>
-                </a>
-                <a className="home" href="/">
-                    <i class="fas fa-cogs"></i>
-                    <p>Setting</p>
-                </a>
-          </div>
-        )
+                    <img src={item.icon} alt="icon" width="40px" height="40px"
+                    />
+                    <p>{item.label}</p>
+                 </a> 
+              ))
+          }</div>
+        );
     }
 }
 export default Menu;

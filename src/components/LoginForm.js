@@ -8,7 +8,7 @@ class LoginForm extends Component {
                 <form>
                     <div>
                         <label>Username</label>
-                        <input placeholder="user"/>
+                        <input placeholder="user" value={this.props.email}/>
                     </div>
                     <div>
                         <label>Password</label>
