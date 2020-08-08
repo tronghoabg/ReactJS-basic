@@ -3,14 +3,20 @@ import React, { Component } from 'react';
 class LoginForm extends Component {
     render() {
         return (
-            <div>
+            <div className="loginForm">
                 <h1>Sign in</h1>
                 <form>
-                    Username:
-                    <input/>
-                    Password:
-                    <input/>
-                    <button>Đăng nhập</button>
+                    <div>
+                        <label>Username</label>
+                        <input placeholder="tronghoabg"/>
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input placeholder="********"/>
+                    </div>
+                    <div>
+                        <button>Đăng nhập</button>
+                    </div>
                 </form>
             </div>
         )
