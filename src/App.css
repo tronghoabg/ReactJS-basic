@@ -1,5 +1,7 @@
+#root {
+}
 .App {
-  margin: 0 auto;
+  margin: auto;
   position: relative;
   width: 1440px;
   height: 1024px;
@@ -15,7 +17,6 @@
   background-repeat: no-repeat;
 }
 .loginForm {
-  /* position: absolute; */
   margin: 0 auto;
   width: 583px;
   height: 792px;
@@ -72,4 +73,36 @@
   line-height: 19px;
   padding: 0 10px;
   border: none;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E5E5E5;
+  width: 100%;
+  height: 136px;
+}
+.menu i {
+  margin: 40px 0 5px 0;
+}
+.menu p {
+  margin: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+.menu a {
+  text-align: center;
+  color: #8E8E8E;
+  font-size: 30px;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+}
+.menu .active {
+  border: 1px solid #8CDC52;
+  color: #8CDC52;
+  font-size: 30px;
+  text-decoration: none;
 }

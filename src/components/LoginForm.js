@@ -8,7 +8,7 @@ class LoginForm extends Component {
                 <form>
                     <div>
                         <label>Username</label>
-                        <input placeholder="tronghoabg"/>
+                        <input placeholder="user"/>
                     </div>
                     <div>
                         <label>Password</label>
